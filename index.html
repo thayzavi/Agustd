@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- Icon-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Instagram</title>
+</head>
+
+<body>
+    <body class="body">
+
+        <!-- Nav-->
+        <header>
+            <nav class="navbar navbar-light nav-top">
+                <div class="container-fluid nav-container">
+                    <a class="navbar-brand" href="https://www.instagram.com/agustd/?hl=pt-br" target="_blank"><img
+                        src="agustd (1).png" style=" max-width:130px; 
+                    max-height:80px"></a>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+                    </form>
+                    <div style="width: 30%;">
+                        <i class="bi bi-house-door icons"></i>
+                        <i class="bi bi-inbox icons"></i>
+                        <i class="bi bi-compass icons"></i>
+                        <i class="bi bi-heart icons"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+         <!-- Main-->
+    
+         <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-0 col-md-2"></div>
+                <div class="col-12 col-md-8">
+                      <!-- Profile-->
+                      <div class="container">
+                        <div class="row" style="padding-top: 20px;">
+                            <div class="col-3">
+                                <img class="img-profile" src="🥥.jpg">
+                            </div>
+                            <div class="col-7">
+                                <div class="row" style="padding-top: 20px; padding-bottom: 10px;">
+                                    <div class="col-8 col-lg-5">
+                                        <h2 class="username">Agustd</h2>
+                                    </div>
+                                    <div class="col-4 col-lg-6"><button type="button"
+                                            class="btn btn-outline-secondary button-edit">Editar
+                                            perfil</button></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">
+                                        <p class="profile-datas"><strong>149</strong> publicações</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="profile-datas"><strong>49 mi</strong> seguidores</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="profile-datas"><strong>6</strong> seguindo</p>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h1 class="name">SUGA of BTS 민윤기</h1>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p class="profile-desc">
+                                            Agust D '해금' Official MV | <a href="https://www.youtube.com/watch?v=iy9qZR_OGa0&feature=youtu.be"> youtu.be/iy9qZR_OGa0 </a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Stories-->
+                    <div style="padding-top: 0px;">
+                        <div class="row">
+                            <div class="col-2"> <canvas id="myCrl"></canvas></div>
+                            <div class="col-2"> <canvas id="myCrl1"></canvas></div>
+                        </div>
+                    </div>
+                    <div style="padding-bottom: 40px;">
+                        <div class="row">
+                            <div class="col-2 stories">
+                                <a href="https://open.spotify.com/intl-pt/artist/5RmQ8k4l3HZ8JoPb4mNsML?si=RTFqWif8QXilvdZTD39s_A" target="_blank">Spotify</a> <!-- blank faz com que o link seja aberto em uma nova aba do navegador.-->
+                            </div>     
+                            <div class="col-2 stories"> <a href="https://www.youtube.com/channel/UC2QGq7pv-ZfZfTL8tcn2fNg" target="_blank">Youtube </a></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Line-->
+                    <hr size="5" width="100%" color="#F5FFFA" style="margin: 0%;">
+
+                    <!-- Nav-Feed-->
+                    <ul class="nav nav-tabs nav-feed" id="myTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active nav-link-1" id="home-tab" data-bs-toggle="tab" href="#home" role="tab"
+                                aria-controls="home" aria-selected="true"><i class="bi bi-grid-3x3"></i> PUBLICAÇÕES</a>
+                        </li>
+
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link nav-link-2" id="profile-tab" data-bs-toggle="tab" href="#profile" role="tab"
+                                aria-controls="profile" aria-selected="false"><i class="bi bi-file-person"></i> MARCADOS</a>
+                        </li>
+                    </ul>
+                    <!-- Card-Feed-->
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div class="row" style="padding-bottom: 25px;">
+                                <div class="col-4">
+                                    <div class="card">
+                                       <!--overlay--> <div class="card overlay-container">
+                                            <img src="1.png" class="card-img-top" alt="...">
+                                            <div class="overlay">
+                                                <p>♥ 6,4 mi</p>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card">
+                    <!--overlay-->   <div class="card overlay-container">
+                                            <img src="2.png" class="card-img-top" alt="...">
+                                            <div class="overlay">
+                                                <p>♥ 8,5 mi</p>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card">
+                     <!--overlay-->    <div class="card overlay-container">
+                                            <img src="3.png" class="card-img-top" alt="...">
+                                            <div class="overlay">
+                                                <p>♥ 7,7 mi</p>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" style="padding-bottom: 25px;">
+                                <div class="col-4">
+                                    <div class="card">
+                     <!--overlay-->                    <div class="card overlay-container">
+                                            <img src="4.png" class="card-img-top" alt="...">
+                                            <div class="overlay">
+                                                <p>♥ 8,4 mi</p>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card">
+                                        <div class="card overlay-container">
+                                            <img src="7.png" class="card-img-top" alt="...">
+                                            <div class="overlay">
+                                                <p>♥ 7,4 mi</p>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card">
+                                        <div class="card overlay-container">
+                                            <img src="6.png" class="card-img-top" alt="...">
+                                            <div class="overlay">
+                                                <p>♥ 9,4 mi</p>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row" style="padding-bottom: 25px;">
+                                <div class="col-4">
+                                    <div class="card">
+                                        <div class="card overlay-container">
+                                            <img src="5.png" class="card-img-top" alt="...">
+                                            <div class="overlay">
+                                                <p>♥ 7,1 mi</p>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"></div>
+                    </div>
+                </div>
+                <div class="col-0 col-md-2"></div>
+            </div>
+        </div>
+    </section>
+
+                    <script type="text/javascript">
+
+                        var crl = document.getElementById('myCrl').getContext('2d');
+                
+                        crl.beginPath();
+                        crl.arc(60, 100, 40, 0, 2 * Math.PI);
+                        crl.fillStyle = '#006400';
+                        crl.fill();
+                        crl.linewidth = 5;
+                        crl.strokeStyle = '#ffff';
+                        crl.stroke();
+                
+                        var crl1 = document.getElementById('myCrl1').getContext('2d');
+                
+                        crl1.beginPath();
+                        crl1.arc(60, 100, 40, 0, 2 * Math.PI);
+                        crl1.fillStyle = '#B22222';
+                        crl1.fill();
+                        crl1.linewidth = 5;
+                        crl1.strokeStyle = '#ffff';
+                        crl1.stroke();
+                
+                    </script>
+
+
+    
+</body>
+</html>
